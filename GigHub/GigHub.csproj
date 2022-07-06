@@ -180,10 +180,12 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AttendancesController.cs" />
+    <Compile Include="Controllers\FollowingsController.cs" />
     <Compile Include="Controllers\GigsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Dtos\AttendanceDto.cs" />
+    <Compile Include="Dtos\FollowingDto.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -215,8 +217,13 @@
     <Compile Include="Migrations\202207061650063_AddAttendanceTableMigration.designer.cs">
       <DependentUpon>202207061650063_AddAttendanceTableMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202207061835496_AddFollowingTableMigration.cs" />
+    <Compile Include="Migrations\202207061835496_AddFollowingTableMigration.designer.cs">
+      <DependentUpon>202207061835496_AddFollowingTableMigration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Attendance.cs" />
+    <Compile Include="Models\Following.cs" />
     <Compile Include="ViewModels\AddPhoneNumberViewModel.cs" />
     <Compile Include="ViewModels\ChangePasswordViewModel.cs" />
     <Compile Include="ViewModels\FactorViewModel.cs" />
@@ -339,6 +346,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202207061650063_AddAttendanceTableMigration.resx">
       <DependentUpon>202207061650063_AddAttendanceTableMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202207061835496_AddFollowingTableMigration.resx">
+      <DependentUpon>202207061835496_AddFollowingTableMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
