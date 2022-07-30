@@ -1,5 +1,4 @@
-﻿using System.Web;
-using System.Web.Optimization;
+﻿using System.Web.Optimization;
 
 namespace GigHub
 {
@@ -10,6 +9,8 @@ namespace GigHub
         {
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
                 "~/Scripts/app/services/attendanceService.js",
+                "~/Scripts/app/services/followingService.js",
+                "~/Scripts/app/controllers/gigDetailsController.js",
                 "~/Scripts/app/controllers/gigsController.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/libs").Include(
