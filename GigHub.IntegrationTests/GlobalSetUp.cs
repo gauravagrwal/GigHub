@@ -28,7 +28,7 @@ namespace GigHub.IntegrationTests
             var context = new ApplicationDbContext();
 
             if (context.Users.Any())
-                return; 
+                return;
 
             context.Users.Add(new ApplicationUser { UserName = "user1", Name = "user1", Email = "-", PasswordHash = "-" });
             context.Users.Add(new ApplicationUser { UserName = "user2", Name = "user2", Email = "-", PasswordHash = "-" });

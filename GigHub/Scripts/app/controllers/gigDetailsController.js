@@ -18,7 +18,7 @@
 
     var done = function () {
         var text = (followButton.text() == "Follow") ? "Following" : "Follow";
-        button.toggleClass("btn-info").toggleClass("btn-default").text(text);
+        followButton.toggleClass("btn-info").toggleClass("btn-default").text(text);
     };
 
     var fail = function () {

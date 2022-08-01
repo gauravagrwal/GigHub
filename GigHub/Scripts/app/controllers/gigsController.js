@@ -1,4 +1,4 @@
-﻿var GigController = function (attendanceService) {
+﻿var GigsController = function (attendanceService) {
     var button;
 
     var init = function (container) {
